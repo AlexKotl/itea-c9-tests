@@ -3,5 +3,5 @@ app:
     type: annotation
 
 blog_routing:
-    path: /blog
-    defaults: {_controller: "AppBundle:Default:blog"}
+    path: /blog/{page}
+    defaults: {_controller: "AppBundle:Default:blog", page: 0}

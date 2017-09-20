@@ -19,7 +19,7 @@ class DefaultController extends Controller
         ]);
     }
     
-    public function blogAction() {
-        die("BLOG");
+    public function blogAction($page) {
+        die("BLOG page {$page}");  
     }
 }
