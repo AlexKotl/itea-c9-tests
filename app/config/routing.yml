@@ -33,3 +33,11 @@ news_ordered:
     requirements:
         page: \d+
         order: asc|desc
+    
+news_main_lang:
+    path: /{lang}/news
+    defaults: 
+        _controller: "AppBundle:Default:news"
+        lang: ua
+    requirements:
+        lang: ua|en|ru

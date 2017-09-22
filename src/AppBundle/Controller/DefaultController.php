@@ -23,7 +23,7 @@ class DefaultController extends Controller
         die("BLOG page {$page}");  
     }
     
-    public function newsAction($name = '', $page = 1, $order = '', $sort = '') {
+    public function newsAction($name = '', $page = 1, $order = '', $sort = '', $lang = 'ua') {
         if ($name !== '') {
             die("You are viewving news '{$name}'");
         }
@@ -31,6 +31,7 @@ class DefaultController extends Controller
         die("You are on news action. Page: {$page}. " 
             . ($order !== '' ? "Sorted by {$sort}. " : '')
             . ($order !== '' ? "Ordered by {$order}. " : '')
+            . ($lang !== '' ? "Language: {$lang}. " : '')
         );
     }
 }
