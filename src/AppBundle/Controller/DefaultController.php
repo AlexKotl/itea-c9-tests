@@ -23,7 +23,11 @@ class DefaultController extends Controller
         die("BLOG page {$page}");  
     }
     
-    public function newsAction() {
+    public function newsAction($name = '') {
+        if ($name !== '') {
+            die("You are viewving news '{$name}'");
+        }
+        
         die("You are on news action.");
     }
 }

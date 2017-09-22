@@ -4,8 +4,16 @@ app:
 
 blog_routing:
     path: /blog/{page}
-    defaults: {_controller: "AppBundle:Default:blog", page: 0}
+    defaults: 
+        _controller: "AppBundle:Default:blog"
+        page: 0
     
 news_main:
     path: /news
-    defaults: {_controller: "AppBundle:Default:news"}
+    defaults: 
+        _controller: "AppBundle:Default:news"
+    
+news_details:
+    path: /news/view/{name}
+    defaults: 
+        _controller: "AppBundle:Default:news"
