@@ -22,4 +22,8 @@ class DefaultController extends Controller
     public function blogAction($page) {
         die("BLOG page {$page}");  
     }
+    
+    public function newsAction() {
+        die("You are on news action.");
+    }
 }
