@@ -23,11 +23,14 @@ class DefaultController extends Controller
         die("BLOG page {$page}");  
     }
     
-    public function newsAction($name = '', $page = 1) {
+    public function newsAction($name = '', $page = 1, $order = '', $sort = '') {
         if ($name !== '') {
             die("You are viewving news '{$name}'");
         }
         
-        die("You are on news action. Page: {$page}");
+        die("You are on news action. Page: {$page}. " 
+            . ($order !== '' ? "Sorted by {$sort}. " : '')
+            . ($order !== '' ? "Ordered by {$order}. " : '')
+        );
     }
 }

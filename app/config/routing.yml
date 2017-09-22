@@ -25,3 +25,11 @@ news_page:
         page: 1
     requirements:
         page: \d+
+        
+news_ordered:
+    path: /news/page/{page}/sort/{sort}/order/{order}
+    defaults: 
+        _controller: "AppBundle:Default:news"
+    requirements:
+        page: \d+
+        order: asc|desc
