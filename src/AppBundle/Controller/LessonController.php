@@ -16,7 +16,7 @@ class LessonController extends Controller {
         
         $response = new Response("<h1>Super Hi {$session->get('name')}</h1>");
         
-        return $this->redirect("http://akotl.com");;
+        return $this->render("/index/welcome.html.twig");
         
     }
     
