@@ -13,10 +13,13 @@ class LessonController extends Controller {
     public function welcomeAction(Request $request, SessionInterface $session) {
         
         $session->set("name", $request->query->get('name'));
+        $name = $session->get('name');
         
         $response = new Response("<h1>Super Hi {$session->get('name')}</h1>");
         
-        return $this->render("/index/welcome.html.twig");
+        return $this->render("/index/welcome.html.twig", [
+            'name' => $name
+        ]);
         
     }
     
