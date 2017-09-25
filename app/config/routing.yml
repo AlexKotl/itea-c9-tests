@@ -41,3 +41,8 @@ news_main_lang:
         lang: ua
     requirements:
         lang: ua|en|ru
+        
+welcome:
+    path: /welcome
+    defaults: 
+        _controller: "AppBundle:Lesson:welcome"
