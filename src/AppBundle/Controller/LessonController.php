@@ -6,9 +6,9 @@ namespace AppBundle\Controller;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
-//use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
-class LessonController {
+class LessonController extends Controller {
     
     public function welcomeAction(Request $request, SessionInterface $session) {
         
@@ -16,7 +16,7 @@ class LessonController {
         
         $response = new Response("<h1>Super Hi {$session->get('name')}</h1>");
         
-        return $response;
+        return $this->redirect("http://akotl.com");;
         
     }
     
