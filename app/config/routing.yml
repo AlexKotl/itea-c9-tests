@@ -1,6 +1,10 @@
 app:
     resource: '@AppBundle/Controller/'
     type: annotation
+    
+blog:
+    resource: '@AppBundle/Resources/config/routing.yml'
+    prefix: /
 
 blog_routing:
     path: /blog/{page}
