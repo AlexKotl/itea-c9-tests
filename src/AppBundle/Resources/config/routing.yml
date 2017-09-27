@@ -1,12 +1,12 @@
 
 index:
     path:     /index
-    defaults: { _controller: AppBundle:BlogController:index }
+    defaults: { _controller: AppBundle:Blog:index }
 
 view:
     path:     /view
-    defaults: { _controller: AppBundle:BlogController:view }
+    defaults: { _controller: AppBundle:Blog:view }
 
 add:
     path:     /add
-    defaults: { _controller: AppBundle:BlogController:add }
+    defaults: { _controller: AppBundle:Blog:add }
