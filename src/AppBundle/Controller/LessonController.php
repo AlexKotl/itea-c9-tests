@@ -15,6 +15,9 @@ class LessonController extends Controller {
         $session->set("name", $request->query->get('name'));
         $name = $session->get('name');
         
+        $logger = $this->get("logger");
+        $logger->warning("Testing feaure");
+        
         $response = new Response("<h1>Super Hi {$session->get('name')}</h1>");
         
         return $this->render("/index/welcome.html.twig", [
