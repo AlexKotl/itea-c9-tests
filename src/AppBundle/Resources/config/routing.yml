@@ -4,7 +4,9 @@ index:
     defaults: { _controller: AppBundle:Blog:index }
 
 view:
-    path:     /view
+    path:     /view/{id}
+    requirements:
+        id: \d+
     defaults: { _controller: AppBundle:Blog:view }
 
 add:

@@ -1,7 +1,16 @@
-{% extends "::base.html.twig" %}
+{% extends "AppBundle::layout.html.twig" %}
 
 {% block title %}AppBundle:Blog:index{% endblock %}
 
-{% block body %}
-<h1>Welcome to the Blog:index page</h1>
+{% block content %}
+<h1>Posts list</h1>
+
+{% for post in posts %}
+    <div>
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.text }}</p>
+        <a href="{{ path("view", {'id': post.id}) }}" class="btn btn-default">Details</a>
+    </div>
+{% endfor %}
+
 {% endblock %}

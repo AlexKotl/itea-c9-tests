@@ -8,15 +8,16 @@ class BlogController extends Controller
 {
     public function indexAction()
     {
+        $posts = $this->getPosts();
         return $this->render('AppBundle:Blog:index.html.twig', array(
-            // ...
+            'posts' => $posts,
         ));
     }
 
-    public function viewAction()
+    public function viewAction($id)
     {
         return $this->render('AppBundle:Blog:view.html.twig', array(
-            // ...
+            'post' => $this->getPosts()[$id - 1]
         ));
     }
 
@@ -25,6 +26,21 @@ class BlogController extends Controller
         return $this->render('AppBundle:Blog:add.html.twig', array(
             // ...
         ));
+    }
+    
+    protected function getPosts() {
+        return [
+            [
+                'id' => 1,
+                'title' => 'New post 1',
+                'text' => "Super hi"
+            ],
+            [
+                'id' => 2,
+                'title' => 'Oldder post',
+                'text' => "Welcome"
+            ]
+        ];
     }
 
 }
