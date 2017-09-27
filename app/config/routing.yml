@@ -4,7 +4,7 @@ app:
     
 blog:
     resource: '@AppBundle/Resources/config/routing.yml'
-    prefix: /
+    prefix: /blog/
 
 blog_routing:
     path: /blog/{page}

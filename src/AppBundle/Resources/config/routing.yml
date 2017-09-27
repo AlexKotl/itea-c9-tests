@@ -1,6 +1,6 @@
 
 index:
-    path:     /index
+    path:     /
     defaults: { _controller: AppBundle:Blog:index }
 
 view:
