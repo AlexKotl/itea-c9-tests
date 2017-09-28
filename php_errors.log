@@ -198,3 +198,38 @@
 [25-Sep-2017 17:24:06 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4446
 [25-Sep-2017 17:24:06 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4491}() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4491
 [25-Sep-2017 17:24:06 UTC] PHP   6. AppBundle\Controller\LessonController->welcomeAction() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4491
+[28-Sep-2017 14:50:11 UTC] PHP Fatal error:  Class 'ShopBundle\ShopBundle' not found in /home/ubuntu/workspace/symfony_first/app/AppKernel.php on line 19
+[28-Sep-2017 14:50:11 UTC] PHP Stack trace:
+[28-Sep-2017 14:50:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_first/web/app.php:0
+[28-Sep-2017 14:50:11 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/symfony_first/web/app.php:20
+[28-Sep-2017 14:50:11 UTC] PHP   3. Symfony\Component\HttpKernel\Kernel->boot() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:168
+[28-Sep-2017 14:50:11 UTC] PHP   4. Symfony\Component\HttpKernel\Kernel->initializeBundles() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:116
+[28-Sep-2017 14:50:11 UTC] PHP   5. AppKernel->registerBundles() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:450
+[28-Sep-2017 14:51:45 UTC] PHP Fatal error:  Class 'ShopBundle\ShopBundle' not found in /home/ubuntu/workspace/symfony_first/app/AppKernel.php on line 19
+[28-Sep-2017 14:51:45 UTC] PHP Stack trace:
+[28-Sep-2017 14:51:45 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_first/web/app.php:0
+[28-Sep-2017 14:51:45 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/symfony_first/web/app.php:20
+[28-Sep-2017 14:51:45 UTC] PHP   3. Symfony\Component\HttpKernel\Kernel->boot() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:168
+[28-Sep-2017 14:51:45 UTC] PHP   4. Symfony\Component\HttpKernel\Kernel->initializeBundles() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:116
+[28-Sep-2017 14:51:45 UTC] PHP   5. AppKernel->registerBundles() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:450
+[28-Sep-2017 14:54:09 UTC] PHP Fatal error:  Class 'ShopBundle\ShopBundle' not found in /home/ubuntu/workspace/symfony_first/app/AppKernel.php on line 19
+[28-Sep-2017 14:54:09 UTC] PHP Stack trace:
+[28-Sep-2017 14:54:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_first/web/app.php:0
+[28-Sep-2017 14:54:09 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/symfony_first/web/app.php:20
+[28-Sep-2017 14:54:09 UTC] PHP   3. Symfony\Component\HttpKernel\Kernel->boot() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:168
+[28-Sep-2017 14:54:09 UTC] PHP   4. Symfony\Component\HttpKernel\Kernel->initializeBundles() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:116
+[28-Sep-2017 14:54:09 UTC] PHP   5. AppKernel->registerBundles() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:450
+[28-Sep-2017 14:55:07 UTC] PHP Fatal error:  Class 'ShopBundle\ShopBundle' not found in /home/ubuntu/workspace/symfony_first/app/AppKernel.php on line 19
+[28-Sep-2017 14:55:07 UTC] PHP Stack trace:
+[28-Sep-2017 14:55:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_first/web/app.php:0
+[28-Sep-2017 14:55:07 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/symfony_first/web/app.php:20
+[28-Sep-2017 14:55:07 UTC] PHP   3. Symfony\Component\HttpKernel\Kernel->boot() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:168
+[28-Sep-2017 14:55:07 UTC] PHP   4. Symfony\Component\HttpKernel\Kernel->initializeBundles() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:116
+[28-Sep-2017 14:55:07 UTC] PHP   5. AppKernel->registerBundles() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:450
+[28-Sep-2017 14:55:11 UTC] PHP Fatal error:  Class 'ShopBundle\ShopBundle' not found in /home/ubuntu/workspace/symfony_first/app/AppKernel.php on line 19
+[28-Sep-2017 14:55:11 UTC] PHP Stack trace:
+[28-Sep-2017 14:55:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_first/web/app.php:0
+[28-Sep-2017 14:55:11 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/symfony_first/web/app.php:20
+[28-Sep-2017 14:55:11 UTC] PHP   3. Symfony\Component\HttpKernel\Kernel->boot() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:168
+[28-Sep-2017 14:55:11 UTC] PHP   4. Symfony\Component\HttpKernel\Kernel->initializeBundles() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:116
+[28-Sep-2017 14:55:11 UTC] PHP   5. AppKernel->registerBundles() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:450
