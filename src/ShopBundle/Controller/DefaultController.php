@@ -29,8 +29,15 @@ class DefaultController extends Controller
         );
         $category = array_pop($category);
         
+        $products = array_filter(
+            DataController::$data['products'],
+            function($e) use ($category) {
+                return $e['category_id'] == $category['id'];
+            }
+        );
+        
         return $this->render('ShopBundle:Default:category.html.twig', [
-            'items' => DataController::$data['categories'],
+            'items' => $products,
             'category' => $category,
         ]);
     }
