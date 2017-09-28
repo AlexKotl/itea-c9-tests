@@ -4,7 +4,7 @@ namespace ShopBundle\Controller;
 
 class DataController {
     
-    protected $data = [
+    static public $data = [
         'categories' => [
             [
                 'id' => 1,

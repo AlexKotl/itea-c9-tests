@@ -233,3 +233,33 @@
 [28-Sep-2017 14:55:11 UTC] PHP   3. Symfony\Component\HttpKernel\Kernel->boot() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:168
 [28-Sep-2017 14:55:11 UTC] PHP   4. Symfony\Component\HttpKernel\Kernel->initializeBundles() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:116
 [28-Sep-2017 14:55:11 UTC] PHP   5. AppKernel->registerBundles() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:450
+[28-Sep-2017 18:29:54 UTC] PHP Parse error:  syntax error, unexpected '[', expecting ']' in /home/ubuntu/workspace/symfony_first/src/ShopBundle/Controller/DefaultController.php on line 12
+[28-Sep-2017 18:29:54 UTC] PHP Stack trace:
+[28-Sep-2017 18:29:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_first/web/app.php:0
+[28-Sep-2017 18:29:54 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/symfony_first/web/app.php:20
+[28-Sep-2017 18:29:54 UTC] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:171
+[28-Sep-2017 18:29:54 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4446
+[28-Sep-2017 18:29:54 UTC] PHP   5. Symfony\Component\HttpKernel\Controller\TraceableControllerResolver->getController() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4480
+[28-Sep-2017 18:29:54 UTC] PHP   6. Symfony\Component\HttpKernel\Controller\ControllerResolver->getController() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Controller/TraceableControllerResolver.php:58
+[28-Sep-2017 18:29:54 UTC] PHP   7. Symfony\Bundle\FrameworkBundle\Controller\ControllerResolver->createController() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:3971
+[28-Sep-2017 18:29:54 UTC] PHP   8. Symfony\Component\HttpKernel\Controller\ContainerControllerResolver->createController() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4752
+[28-Sep-2017 18:29:54 UTC] PHP   9. Symfony\Component\HttpKernel\Controller\ControllerResolver->createController() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4713
+[28-Sep-2017 18:29:54 UTC] PHP  10. class_exists() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4027
+[28-Sep-2017 18:29:54 UTC] PHP  11. spl_autoload_call() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4027
+[28-Sep-2017 18:29:54 UTC] PHP  12. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4027
+[28-Sep-2017 18:32:11 UTC] PHP Fatal error:  Class 'DataController' not found in /home/ubuntu/workspace/symfony_first/src/ShopBundle/Controller/DefaultController.php on line 14
+[28-Sep-2017 18:32:11 UTC] PHP Stack trace:
+[28-Sep-2017 18:32:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_first/web/app.php:0
+[28-Sep-2017 18:32:11 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/symfony_first/web/app.php:20
+[28-Sep-2017 18:32:11 UTC] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:171
+[28-Sep-2017 18:32:11 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4446
+[28-Sep-2017 18:32:11 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4491}() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4491
+[28-Sep-2017 18:32:11 UTC] PHP   6. ShopBundle\Controller\DefaultController->indexAction() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4491
+[28-Sep-2017 18:32:52 UTC] PHP Fatal error:  Cannot access protected property ShopBundle\Controller\DataController::$data in /home/ubuntu/workspace/symfony_first/src/ShopBundle/Controller/DefaultController.php on line 14
+[28-Sep-2017 18:32:52 UTC] PHP Stack trace:
+[28-Sep-2017 18:32:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_first/web/app.php:0
+[28-Sep-2017 18:32:52 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/symfony_first/web/app.php:20
+[28-Sep-2017 18:32:52 UTC] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:171
+[28-Sep-2017 18:32:52 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4446
+[28-Sep-2017 18:32:52 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4491}() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4491
+[28-Sep-2017 18:32:52 UTC] PHP   6. ShopBundle\Controller\DefaultController->indexAction() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4491
