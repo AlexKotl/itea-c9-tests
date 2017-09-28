@@ -1,0 +1,5 @@
+                    <ul class="nav nav-pills nav-stacked">
+                        {% for element in menu %}
+                            <li role="presentation"><a href="{{ path('shop_category', {name: element.title}) }}">{{ element.title }}</a></li>
+                        {% endfor %}
+                    </ul>

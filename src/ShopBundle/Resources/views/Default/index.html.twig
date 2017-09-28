@@ -19,11 +19,7 @@
                 </h3>
                 
                 {% block menu %}
-                    <ul class="nav nav-pills nav-stacked">
-                        {% for element in menu %}
-                            <li role="presentation"><a href="#">{{ element.title }}</a></li>
-                        {% endfor %}
-                    </ul>
+                    {{ render(controller("ShopBundle:Default:menu")) }}
                 {% endblock %}
             </div>
         
