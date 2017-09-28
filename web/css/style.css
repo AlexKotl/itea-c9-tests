@@ -1,0 +1,22 @@
+.header .logo {max-width: 300px;}
+.bg-primary {background-color: #5AA2CC}
+
+.productsList .item {
+    margin: 10px 0;
+}
+.productsList .item p {
+    max-height: 100px;
+    overflow-y: hidden;
+}
+.productsList .item .image {
+    padding-bottom: 30%;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 7px;
+}
+.productsList .item .price {
+    font-weight: bold;
+    color: #b72121;
+    font-size: 1.3em;
+    margin: 10px;
+}

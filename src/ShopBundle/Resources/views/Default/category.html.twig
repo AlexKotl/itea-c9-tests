@@ -4,15 +4,22 @@
 
     <h2>{{ category.title }} <small>category</small></h2>
     
-    {% for item in items %}
-        <div class="col-md-4 item">
-            <h5>{{ item.title }}</h5>
-            <p>{{ item.description }}</p>
-            <div class="price">$ {{ item.price | number_format(2) }}</div>
-        </div>
-    {% else %}
+    <div class="productsList">
+        {% for item in items %}
+            <div class="col-md-4 item">
+                <h5>{{ item.title }}</h5>
+                <div class="image" style="background-image: url(/images/products/{{ item.id }}.jpg)"></div>
+                <p>{{ item.description }}</p>
+                <div class="price">$ {{ item.price | number_format(2) }}</div>
+                <a class="btn btn-default">More details</a>
+           </div>
+        {% else %}
+    </div>
     
         <h4>We can't find any product related to this category :(</h4>
+        <div class="text-center">
+            <img src="/images/sad.jpg" width=200 />
+        </div>
     
     {% endfor %}
 
