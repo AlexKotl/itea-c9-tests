@@ -20,3 +20,22 @@
     font-size: 1.3em;
     margin: 10px;
 }
+
+.productDetails .image {
+    padding-bottom: 40%;
+    background-size: contain;
+    background-position: center center;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+}
+
+.productDetails p {
+    font-size: 1.2em;
+}
+
+.productDetails .price {
+    font-weight: bold;
+    color: #b72121;
+    font-size: 2em;
+    margin: 10px;
+}
