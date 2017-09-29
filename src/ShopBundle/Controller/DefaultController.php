@@ -41,4 +41,18 @@ class DefaultController extends Controller
             'category' => $category,
         ]);
     }
+    
+    public function itemAction($id) {
+        $product = array_filter(
+            DataController::$data['products'],
+            function($e) use ($id) {
+                return $e['id'] === $id;
+            }
+        );
+        $product = array_pop($product);
+        
+        return $this->render('ShopBundle:Default:item.html.twig', [
+            'item' => $product
+        ]);
+    }
 }

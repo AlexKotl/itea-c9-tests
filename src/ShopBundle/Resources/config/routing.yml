@@ -5,3 +5,7 @@ shop_homepage:
 shop_category:
     path: /{name}
     defaults: { _controller: ShopBundle:Default:category }
+    
+shop_item:
+    path: /{category_name}/{id}
+    defaults: { _controller: ShopBundle:Default:item }
