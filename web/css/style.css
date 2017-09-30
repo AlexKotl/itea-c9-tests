@@ -39,3 +39,8 @@
     font-size: 2em;
     margin: 10px;
 }
+
+.productDetails .rating {
+    color: #ff9f20;
+    font-size: 1.6em;
+}

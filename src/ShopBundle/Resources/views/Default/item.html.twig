@@ -9,7 +9,13 @@
         <div class="image" style="background-image: url(/images/products/{{ item.id }}.jpg)"></div>
         <h1>{{ item.title }}</h1>
         <p>{{ item.description }}</p>
+        
+        <div class="rating pull-right">
+            {{ item.rating|stars("<i class='fa fa-star' aria-hidden='true'></i>", "<i class='fa fa-star-o' aria-hidden='true'></i>")|raw }}
+        </div>
+        
         <div class="price">$ {{ item.price | number_format(2) }}</div>
+        
         <a class="btn btn-primary" onclick="alert('Buy feature is comming soon...')">BUY</a>
         
         <h3>Reviews</h3>
