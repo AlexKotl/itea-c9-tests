@@ -4,6 +4,7 @@ namespace ShopBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use ShopBundle\Controller\DataController;
+use Symfony\Component\HttpFoundation\Request;
 
 class DefaultController extends Controller
 {
@@ -42,7 +43,7 @@ class DefaultController extends Controller
         ]);
     }
     
-    public function itemAction($id) {
+    public function itemAction($id, Request $request) {
         $product = array_filter(
             DataController::$data['products'],
             function($e) use ($id) {
@@ -51,9 +52,10 @@ class DefaultController extends Controller
         );
 
         $product = array_pop($product);
-        
+
         return $this->render('ShopBundle:Default:item.html.twig', [
-            'item' => $product
+            'item' => $product,
+            //'category_name' => $request
         ]);
     }
 }

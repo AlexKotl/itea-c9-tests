@@ -529,3 +529,31 @@
 [28-Sep-2017 20:06:29 UTC] PHP 254. Symfony\Component\HttpFoundation\Request->prepareRequestUri() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpFoundation/Request.php:1102
 [28-Sep-2017 20:06:29 UTC] PHP 255. Symfony\Component\HttpFoundation\Request->getSchemeAndHttpHost() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpFoundation/Request.php:1815
 [28-Sep-2017 20:06:29 UTC] PHP 256. Symfony\Component\HttpFoundation\Request->getScheme() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpFoundation/Request.php:1118
+[30-Sep-2017 19:58:08 UTC] PHP Parse error:  syntax error, unexpected '$request' (T_VARIABLE) in /home/ubuntu/workspace/symfony_first/src/ShopBundle/Controller/DefaultController.php on line 54
+[30-Sep-2017 19:58:08 UTC] PHP Stack trace:
+[30-Sep-2017 19:58:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_first/web/app.php:0
+[30-Sep-2017 19:58:08 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/symfony_first/web/app.php:20
+[30-Sep-2017 19:58:08 UTC] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:171
+[30-Sep-2017 19:58:08 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4446
+[30-Sep-2017 19:58:08 UTC] PHP   5. Symfony\Component\HttpKernel\Controller\TraceableControllerResolver->getController() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4480
+[30-Sep-2017 19:58:08 UTC] PHP   6. Symfony\Component\HttpKernel\Controller\ControllerResolver->getController() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Controller/TraceableControllerResolver.php:58
+[30-Sep-2017 19:58:08 UTC] PHP   7. Symfony\Bundle\FrameworkBundle\Controller\ControllerResolver->createController() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:3971
+[30-Sep-2017 19:58:08 UTC] PHP   8. Symfony\Component\HttpKernel\Controller\ContainerControllerResolver->createController() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4752
+[30-Sep-2017 19:58:08 UTC] PHP   9. Symfony\Component\HttpKernel\Controller\ControllerResolver->createController() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4713
+[30-Sep-2017 19:58:08 UTC] PHP  10. class_exists() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4027
+[30-Sep-2017 19:58:08 UTC] PHP  11. spl_autoload_call() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4027
+[30-Sep-2017 19:58:08 UTC] PHP  12. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4027
+[30-Sep-2017 19:58:17 UTC] PHP Parse error:  syntax error, unexpected '$request' (T_VARIABLE) in /home/ubuntu/workspace/symfony_first/src/ShopBundle/Controller/DefaultController.php on line 54
+[30-Sep-2017 19:58:17 UTC] PHP Stack trace:
+[30-Sep-2017 19:58:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_first/web/app.php:0
+[30-Sep-2017 19:58:17 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/symfony_first/web/app.php:20
+[30-Sep-2017 19:58:17 UTC] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:171
+[30-Sep-2017 19:58:17 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4446
+[30-Sep-2017 19:58:17 UTC] PHP   5. Symfony\Component\HttpKernel\Controller\TraceableControllerResolver->getController() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4480
+[30-Sep-2017 19:58:17 UTC] PHP   6. Symfony\Component\HttpKernel\Controller\ControllerResolver->getController() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Controller/TraceableControllerResolver.php:58
+[30-Sep-2017 19:58:17 UTC] PHP   7. Symfony\Bundle\FrameworkBundle\Controller\ControllerResolver->createController() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:3971
+[30-Sep-2017 19:58:17 UTC] PHP   8. Symfony\Component\HttpKernel\Controller\ContainerControllerResolver->createController() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4752
+[30-Sep-2017 19:58:17 UTC] PHP   9. Symfony\Component\HttpKernel\Controller\ControllerResolver->createController() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4713
+[30-Sep-2017 19:58:17 UTC] PHP  10. class_exists() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4027
+[30-Sep-2017 19:58:17 UTC] PHP  11. spl_autoload_call() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4027
+[30-Sep-2017 19:58:17 UTC] PHP  12. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4027

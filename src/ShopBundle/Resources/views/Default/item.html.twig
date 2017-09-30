@@ -2,6 +2,10 @@
 
 {% block content %}
     <div class="productDetails">
+        
+        <!-- здесь можно сделать ссылку с урлом на категорию, но так как мы не используем реляционную БД это породит еще один кусок бесполезного кода -->
+        <p><br><a href="javascript:window.history.go(-1)"><<< Back</a></p>
+        
         <div class="image" style="background-image: url(/images/products/{{ item.id }}.jpg)"></div>
         <h1>{{ item.title }}</h1>
         <p>{{ item.description }}</p>
