@@ -11,7 +11,16 @@
                 <div class="image" style="background-image: url(/images/products/{{ item.id }}.jpg)"></div>
                 <p>{{ item.description }}</p>
                 <div class="price">$ {{ item.price | number_format(2) }}</div>
+                
                 <a href="{{ path('shop_item', {'category_name': category.title, id: item.id}) }}" class="btn btn-default">More details</a>
+                
+                <div class="pull-right">
+                {% if item.comments is defined and item.comments|length > 0 %} 
+                    <b>{{ item.comments|length }} Reviews</b>
+                {% else %}
+                    <i>No reviews yet</i>
+                {% endif %}
+                </div>
            </div>
         {% else %}
     </div>
