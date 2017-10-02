@@ -109,5 +109,9 @@ class Product
     {
         return $this->description;
     }
+    
+    public function getNameAndPrice() {
+        return $this->name . ' and ' . $this->price;
+    }
 }
 

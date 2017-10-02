@@ -58,3 +58,7 @@ welcome:
 save:
     path: /save
     defaults: { _controller: "AppBundle:Data:save" }
+    
+get_product:
+    path:     /get_product
+    defaults: { _controller: AppBundle:Data:get }    
