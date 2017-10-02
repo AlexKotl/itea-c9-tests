@@ -12,3 +12,7 @@ view:
 add:
     path:     /add
     defaults: { _controller: AppBundle:Blog:add }
+
+save:
+    path:     /save
+    defaults: { _controller: AppBundle:Data:save }

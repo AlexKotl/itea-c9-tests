@@ -54,3 +54,7 @@ welcome:
     path: /welcome
     defaults: 
         _controller: "AppBundle:Lesson:welcome"
+        
+save:
+    path: /save
+    defaults: { _controller: "AppBundle:Data:save" }
