@@ -565,3 +565,35 @@
 [04-Oct-2017 18:18:15 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4446
 [04-Oct-2017 18:18:15 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4491}() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4491
 [04-Oct-2017 18:18:15 UTC] PHP   6. AppBundle\Controller\DefaultController->blogAction() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4491
+[04-Oct-2017 18:44:55 UTC] PHP Fatal error:  Call to undefined method AppBundle\Entity\Product::getTitle() in /home/ubuntu/workspace/symfony_first/src/AppBundle/Controller/DefaultController.php on line 43
+[04-Oct-2017 18:44:55 UTC] PHP Stack trace:
+[04-Oct-2017 18:44:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_first/web/app.php:0
+[04-Oct-2017 18:44:55 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/symfony_first/web/app.php:20
+[04-Oct-2017 18:44:55 UTC] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:171
+[04-Oct-2017 18:44:55 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4446
+[04-Oct-2017 18:44:55 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4491}() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4491
+[04-Oct-2017 18:44:55 UTC] PHP   6. AppBundle\Controller\DefaultController->blogAction() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4491
+[04-Oct-2017 18:46:09 UTC] PHP Fatal error:  Call to undefined method AppBundle\Entity\Product::getTitle() in /home/ubuntu/workspace/symfony_first/src/AppBundle/Controller/DefaultController.php on line 43
+[04-Oct-2017 18:46:09 UTC] PHP Stack trace:
+[04-Oct-2017 18:46:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_first/web/app.php:0
+[04-Oct-2017 18:46:09 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/symfony_first/web/app.php:20
+[04-Oct-2017 18:46:09 UTC] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:171
+[04-Oct-2017 18:46:09 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4446
+[04-Oct-2017 18:46:09 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4491}() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4491
+[04-Oct-2017 18:46:09 UTC] PHP   6. AppBundle\Controller\DefaultController->blogAction() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4491
+[04-Oct-2017 18:58:51 UTC] PHP Fatal error:  Call to a member function getName() on a non-object in /home/ubuntu/workspace/symfony_first/src/AppBundle/Controller/DefaultController.php on line 49
+[04-Oct-2017 18:58:51 UTC] PHP Stack trace:
+[04-Oct-2017 18:58:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_first/web/app.php:0
+[04-Oct-2017 18:58:51 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/symfony_first/web/app.php:20
+[04-Oct-2017 18:58:51 UTC] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:171
+[04-Oct-2017 18:58:51 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4446
+[04-Oct-2017 18:58:51 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4491}() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4491
+[04-Oct-2017 18:58:51 UTC] PHP   6. AppBundle\Controller\DefaultController->blogAction() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4491
+[04-Oct-2017 18:59:10 UTC] PHP Fatal error:  Call to undefined method Doctrine\ORM\Query::getOneResult() in /home/ubuntu/workspace/symfony_first/src/AppBundle/Controller/DefaultController.php on line 48
+[04-Oct-2017 18:59:10 UTC] PHP Stack trace:
+[04-Oct-2017 18:59:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_first/web/app.php:0
+[04-Oct-2017 18:59:10 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/symfony_first/web/app.php:20
+[04-Oct-2017 18:59:10 UTC] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:171
+[04-Oct-2017 18:59:10 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4446
+[04-Oct-2017 18:59:10 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4491}() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4491
+[04-Oct-2017 18:59:10 UTC] PHP   6. AppBundle\Controller\DefaultController->blogAction() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4491

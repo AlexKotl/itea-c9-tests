@@ -13,3 +13,4 @@ AppBundle\Entity\Category:
             type: string
             length: 255
     lifecycleCallbacks: {  }
+

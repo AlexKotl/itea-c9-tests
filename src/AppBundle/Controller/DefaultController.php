@@ -25,19 +25,29 @@ class DefaultController extends Controller
     }
     
     public function blogAction($page) {
-        $category = new Category();
-        $category->setName("new category");
+        // $category = new Category();
+        // $category->setName("new category");
         
-        $product = new Product();
-        $product->setName("First");
-        $product->setPrice(99);
-        $product->setDescription("Description");
-        $product->setCategory($category);
+        // $product = new Product();
+        // $product->setName("First");
+        // $product->setPrice(99);
+        // $product->setDescription("Description");
+        // $product->setCategory($category);
+        
+        // $em = $this->getDoctrine()->getManager();
+        // $em->persist($category);
+        // $em->persist($product);
+        // $em->flush();
+        
+        $repo = $this->getDoctrine()->getRepository(Product::class);
+        $title = $repo->find(2)->getName();
+        //die($title);
         
         $em = $this->getDoctrine()->getManager();
-        $em->persist($category);
-        $em->persist($product);
-        $em->flush();
+        $product = $em->createQuery("select p from AppBundle:Product p where p.name = :name")
+            ->setMaxResults(1)
+            ->setParameter('name', "First")->getSingleResult();
+        die($product->getName());
         
         return $this->render('base.html.twig');
     }
