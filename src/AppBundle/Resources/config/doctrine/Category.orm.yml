@@ -1,7 +1,7 @@
-AppBundle\Entity\Product:
+AppBundle\Entity\Category:
     type: entity
     table: null
-    repositoryClass: AppBundle\Repository\ProductRepository
+    repositoryClass: AppBundle\Repository\CategoryRepository
     id:
         id:
             type: integer
@@ -12,13 +12,4 @@ AppBundle\Entity\Product:
         name:
             type: string
             length: 255
-        price:
-            type: integer
-        description:
-            type: text
     lifecycleCallbacks: {  }
-    
-    manyToOne:
-        category:
-            targetEntity: Category
-            
