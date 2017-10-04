@@ -47,7 +47,14 @@ class DefaultController extends Controller
         $product = $em->createQuery("select p from AppBundle:Product p where p.name = :name")
             ->setMaxResults(1)
             ->setParameter('name', "First")->getSingleResult();
-        die($product->getName());
+        //die($product->getName());
+        
+        $results = $repo->createQueryBuilder('p')
+            ->where('p.price > :price')
+            ->setParameter('price', 50)
+            ->orderBy('p.price', 'DESC')
+            ->getQuery()
+            ->getResult();
         
         return $this->render('base.html.twig');
     }
