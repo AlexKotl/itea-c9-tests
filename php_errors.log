@@ -557,3 +557,11 @@
 [30-Sep-2017 19:58:17 UTC] PHP  10. class_exists() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4027
 [30-Sep-2017 19:58:17 UTC] PHP  11. spl_autoload_call() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4027
 [30-Sep-2017 19:58:17 UTC] PHP  12. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4027
+[04-Oct-2017 18:18:15 UTC] PHP Fatal error:  Class 'AppBundle\Controller\Category' not found in /home/ubuntu/workspace/symfony_first/src/AppBundle/Controller/DefaultController.php on line 26
+[04-Oct-2017 18:18:15 UTC] PHP Stack trace:
+[04-Oct-2017 18:18:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_first/web/app.php:0
+[04-Oct-2017 18:18:15 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/symfony_first/web/app.php:20
+[04-Oct-2017 18:18:15 UTC] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:171
+[04-Oct-2017 18:18:15 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4446
+[04-Oct-2017 18:18:15 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4491}() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4491
+[04-Oct-2017 18:18:15 UTC] PHP   6. AppBundle\Controller\DefaultController->blogAction() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4491
