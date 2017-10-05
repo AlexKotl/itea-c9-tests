@@ -597,3 +597,17 @@
 [04-Oct-2017 18:59:10 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4446
 [04-Oct-2017 18:59:10 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4491}() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4491
 [04-Oct-2017 18:59:10 UTC] PHP   6. AppBundle\Controller\DefaultController->blogAction() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4491
+[05-Oct-2017 19:45:50 UTC] PHP Fatal error:  Class 'BlogBundle\BlogBundle' not found in /home/ubuntu/workspace/symfony_first/app/AppKernel.php on line 20
+[05-Oct-2017 19:45:50 UTC] PHP Stack trace:
+[05-Oct-2017 19:45:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_first/web/app.php:0
+[05-Oct-2017 19:45:50 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/symfony_first/web/app.php:20
+[05-Oct-2017 19:45:50 UTC] PHP   3. Symfony\Component\HttpKernel\Kernel->boot() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:168
+[05-Oct-2017 19:45:50 UTC] PHP   4. Symfony\Component\HttpKernel\Kernel->initializeBundles() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:116
+[05-Oct-2017 19:45:50 UTC] PHP   5. AppKernel->registerBundles() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:450
+[05-Oct-2017 19:48:20 UTC] PHP Fatal error:  Class 'BlogBundle\BlogBundle' not found in /home/ubuntu/workspace/symfony_first/app/AppKernel.php on line 20
+[05-Oct-2017 19:48:20 UTC] PHP Stack trace:
+[05-Oct-2017 19:48:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_first/web/app.php:0
+[05-Oct-2017 19:48:20 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/symfony_first/web/app.php:20
+[05-Oct-2017 19:48:20 UTC] PHP   3. Symfony\Component\HttpKernel\Kernel->boot() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:168
+[05-Oct-2017 19:48:20 UTC] PHP   4. Symfony\Component\HttpKernel\Kernel->initializeBundles() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:116
+[05-Oct-2017 19:48:20 UTC] PHP   5. AppKernel->registerBundles() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:450

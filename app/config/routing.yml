@@ -1,21 +1,20 @@
+blog:
+    resource: "@BlogBundle/Resources/config/routing.yml"
+    prefix:   /blog/
+
 shop:
     resource: "@ShopBundle/Resources/config/routing.yml"
     prefix:   /shop/
-
+    
 app:
     resource: '@AppBundle/Controller/'
     type: annotation
     
-blog:
-    resource: '@AppBundle/Resources/config/routing.yml'
-    prefix: /blog/
-
-blog_routing:
-    path: /blog/{page}
+default:
+    path: /
     defaults: 
-        _controller: "AppBundle:Default:blog"
-        page: 0
-    
+        _controller: "AppBundle:Default:news"
+        
 news_main:
     path: /news
     defaults: 
