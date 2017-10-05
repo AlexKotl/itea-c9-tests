@@ -14,3 +14,11 @@ BlogBundle\Entity\Comment:
         date:
             type: datetime
     lifecycleCallbacks: {  }
+
+    manyToOne:
+        post:
+            targetEntity: Post
+        comment:
+            targetEntity: Comment
+        user:
+            targetEntity: User

@@ -11,6 +11,8 @@ class Post
      * @var int
      */
     private $id;
+    private $category;
+    private $user;
 
     /**
      * @var string

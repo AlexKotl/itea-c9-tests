@@ -21,6 +21,10 @@ class Comment
      * @var \DateTime
      */
     private $date;
+    
+    private $post;
+    private $user;
+    private $comment;
 
 
     /**

@@ -17,3 +17,13 @@ BlogBundle\Entity\Post:
         date:
             type: datetime
     lifecycleCallbacks: {  }
+    
+    manyToOne:
+        category:
+            targetEntity: Category
+        user:
+            targetEntity: User
+
+    manyToMany:
+        groups:
+            targetEntity: Tag
