@@ -25,5 +25,5 @@ BlogBundle\Entity\Post:
             targetEntity: User
 
     manyToMany:
-        groups:
+        tags:
             targetEntity: Tag

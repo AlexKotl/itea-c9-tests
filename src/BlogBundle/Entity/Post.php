@@ -13,6 +13,7 @@ class Post
     private $id;
     private $category;
     private $user;
+    private $tags;
 
     /**
      * @var string
