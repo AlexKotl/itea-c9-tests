@@ -2,6 +2,10 @@
 namespace AppBundle\DataFixtures\ORM;
 
 use BlogBundle\Entity\Category;
+use BlogBundle\Entity\Post;
+use BlogBundle\Entity\Comment;
+use BlogBundle\Entity\Tag;
+use BlogBundle\Entity\User;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Common\Persistence\ObjectManager;
 
@@ -34,11 +38,23 @@ class Fixtures extends Fixture
     public function load(ObjectManager $manager)
     {
 
+        // fill in categories
         for ($i = 0; $i < 5; $i++) {
             $category = new Category();
             $category->setTitle($this->randomString(2));
             $manager->persist($category);
+            
+            // fill in posts
+            for ($n = 0; $n < 15; $n++) {
+                $post = new Post();
+                $post->setTitle($this->randomString(5));
+                $post->setContent($this->randomString(50));
+                $post->setDate(new \DateTime("now"));
+                $manager->persist($post);
+            }
         }
+        
+        
 
         $manager->flush();
     }
