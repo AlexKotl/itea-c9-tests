@@ -139,3 +139,4 @@ class User
         return $this->lastLoginTime;
     }
 }
+

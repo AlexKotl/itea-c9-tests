@@ -50,6 +50,8 @@ class Fixtures extends Fixture
                 $post->setTitle($this->randomString(5));
                 $post->setContent($this->randomString(50));
                 $post->setDate(new \DateTime("now"));
+                $post->setCategory($category);
+                //$post->setUser(new \DateTime("now"));
                 $manager->persist($post);
             }
         }

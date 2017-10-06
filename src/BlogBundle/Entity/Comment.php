@@ -84,5 +84,76 @@ class Comment
     {
         return $this->date;
     }
-}
 
+    /**
+     * Set post
+     *
+     * @param \BlogBundle\Entity\Post $post
+     *
+     * @return Comment
+     */
+    public function setPost(\BlogBundle\Entity\Post $post = null)
+    {
+        $this->post = $post;
+
+        return $this;
+    }
+
+    /**
+     * Get post
+     *
+     * @return \BlogBundle\Entity\Post
+     */
+    public function getPost()
+    {
+        return $this->post;
+    }
+
+    /**
+     * Set comment
+     *
+     * @param \BlogBundle\Entity\Comment $comment
+     *
+     * @return Comment
+     */
+    public function setComment(\BlogBundle\Entity\Comment $comment = null)
+    {
+        $this->comment = $comment;
+
+        return $this;
+    }
+
+    /**
+     * Get comment
+     *
+     * @return \BlogBundle\Entity\Comment
+     */
+    public function getComment()
+    {
+        return $this->comment;
+    }
+
+    /**
+     * Set user
+     *
+     * @param \BlogBundle\Entity\User $user
+     *
+     * @return Comment
+     */
+    public function setUser(\BlogBundle\Entity\User $user = null)
+    {
+        $this->user = $user;
+
+        return $this;
+    }
+
+    /**
+     * Get user
+     *
+     * @return \BlogBundle\Entity\User
+     */
+    public function getUser()
+    {
+        return $this->user;
+    }
+}

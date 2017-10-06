@@ -3,9 +3,9 @@
 namespace BlogBundle\Entity;
 
 /**
- * Category
+ * Tag
  */
-class Category
+class Tag
 {
     /**
      * @var int
@@ -15,7 +15,7 @@ class Category
     /**
      * @var string
      */
-    private $title;
+    private $name;
 
 
     /**
@@ -29,26 +29,27 @@ class Category
     }
 
     /**
-     * Set title
+     * Set name
      *
-     * @param string $title
+     * @param string $name
      *
-     * @return Category
+     * @return Tag
      */
-    public function setTitle($title)
+    public function setName($name)
     {
-        $this->title = $title;
+        $this->name = $name;
 
         return $this;
     }
 
     /**
-     * Get title
+     * Get name
      *
      * @return string
      */
-    public function getTitle()
+    public function getName()
     {
-        return $this->title;
+        return $this->name;
     }
 }
+
