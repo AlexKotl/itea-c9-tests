@@ -81,7 +81,7 @@ class Fixtures extends Fixture
                     $comment->setDate(new \DateTime("now"));
                     $comment->setUser($users[rand(0, 9)]);
                     $comment->setPost($post);
-                    $comment->setComment($comment);
+                    //$comment->setComment($comment);
                     $manager->persist($comment);
                 }
             }
