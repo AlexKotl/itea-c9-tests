@@ -17,3 +17,7 @@ save:
     path:     /save
     defaults: { _controller: AppBundle:Data:save }
 
+
+register:
+    path:     /register
+    defaults: { _controller: AppBundle:User:register }

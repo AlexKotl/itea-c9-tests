@@ -13,7 +13,7 @@ app:
 default:
     path: /
     defaults: 
-        _controller: "AppBundle:Default:news"
+        _controller: "AppBundle:Default:index"
         
 news_main:
     path: /news
@@ -61,3 +61,7 @@ save:
 get_product:
     path:     /get_product
     defaults: { _controller: AppBundle:Data:get }    
+    
+register:
+    path:     /register
+    defaults: { _controller: AppBundle:User:register }  
