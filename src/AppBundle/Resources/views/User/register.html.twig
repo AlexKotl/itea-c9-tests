@@ -5,6 +5,10 @@
 {% block body %}
     <h1>Welcome to the User:register page</h1>
 
+    {% if message is defined %}
+    
+    {% else %}
     {{ form(form) }}
+    {% endif %}
 
 {% endblock %}

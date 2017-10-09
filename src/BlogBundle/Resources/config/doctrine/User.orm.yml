@@ -23,4 +23,5 @@ BlogBundle\Entity\User:
         lastLoginTime:
             type: datetime
             column: last_login_time
+            nullable: true
     lifecycleCallbacks: {  }

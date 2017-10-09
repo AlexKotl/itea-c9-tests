@@ -65,3 +65,6 @@ get_product:
 register:
     path:     /register
     defaults: { _controller: AppBundle:User:register }  
+register_success:
+    path:     /register_success
+    defaults: { _controller: AppBundle:User:registerSuccess }  

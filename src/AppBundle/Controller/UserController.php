@@ -22,8 +22,22 @@ class UserController extends Controller
             
         $form->handleRequest($request);
         
+        if ($form->isSubmitted() && $form->isValid()) {
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($user);
+            $em->flush();
+            $this->redirectToRoute("register_success");
+            
+        }
+        
         return $this->render('AppBundle:User:register.html.twig', array(
             'form' => $form->createView()
+        ));
+    }
+    
+    public function registerSuccessAction() {
+        return $this->render('AppBundle:User:register.html.twig', array(
+            'message' => "User registered"
         ));
     }
 
