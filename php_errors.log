@@ -611,3 +611,19 @@
 [05-Oct-2017 19:48:20 UTC] PHP   3. Symfony\Component\HttpKernel\Kernel->boot() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:168
 [05-Oct-2017 19:48:20 UTC] PHP   4. Symfony\Component\HttpKernel\Kernel->initializeBundles() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:116
 [05-Oct-2017 19:48:20 UTC] PHP   5. AppKernel->registerBundles() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:450
+[09-Oct-2017 18:25:53 UTC] PHP Fatal error:  Class 'AppBundle\Entity\User' not found in /home/ubuntu/workspace/symfony_first/src/AppBundle/Controller/UserController.php on line 12
+[09-Oct-2017 18:25:53 UTC] PHP Stack trace:
+[09-Oct-2017 18:25:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_first/web/app.php:0
+[09-Oct-2017 18:25:53 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/symfony_first/web/app.php:20
+[09-Oct-2017 18:25:53 UTC] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:171
+[09-Oct-2017 18:25:53 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4446
+[09-Oct-2017 18:25:53 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4491}() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4491
+[09-Oct-2017 18:25:53 UTC] PHP   6. AppBundle\Controller\UserController->registerAction() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4491
+[09-Oct-2017 18:38:46 UTC] PHP Fatal error:  Call to undefined method Symfony\Component\Form\FormView::handleRequest() in /home/ubuntu/workspace/symfony_first/src/AppBundle/Controller/UserController.php on line 24
+[09-Oct-2017 18:38:46 UTC] PHP Stack trace:
+[09-Oct-2017 18:38:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_first/web/app.php:0
+[09-Oct-2017 18:38:46 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/symfony_first/web/app.php:20
+[09-Oct-2017 18:38:46 UTC] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:171
+[09-Oct-2017 18:38:46 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4446
+[09-Oct-2017 18:38:46 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4491}() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4491
+[09-Oct-2017 18:38:46 UTC] PHP   6. AppBundle\Controller\UserController->registerAction() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4491
