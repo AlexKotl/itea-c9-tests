@@ -68,3 +68,6 @@ register:
 register_success:
     path:     /register_success
     defaults: { _controller: AppBundle:User:registerSuccess }  
+admin:
+    path:     /admin
+    defaults: { _controller: AppBundle:User:admin }

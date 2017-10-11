@@ -35,6 +35,14 @@ class UserController extends Controller
         ));
     }
     
+    public function adminAction() 
+    {
+        return $this->render('AppBundle:User:register.html.twig', array(
+            'message' => "Admin area."
+        ));
+        
+    }
+    
     public function registerSuccessAction() {
         return $this->render('AppBundle:User:register.html.twig', array(
             'message' => "User registered"
