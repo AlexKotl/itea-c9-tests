@@ -8,7 +8,7 @@
     {% if message is defined %}
     
     {% else %}
-    {{ form(form) }}
+        {{ form(form, {attr: {novalidate: 'novalidate'}}) }}
     {% endif %}
 
 {% endblock %}

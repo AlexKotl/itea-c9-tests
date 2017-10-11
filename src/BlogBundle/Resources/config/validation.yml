@@ -1,0 +1,9 @@
+BlogBundle\Entity\User:
+    properties:
+        firstName:
+            - NotBlank: ~
+        lastName:
+            - NotBlank: ~
+        email:
+            - NotBlank: ~
+            - Email: ~
