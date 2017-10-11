@@ -3,7 +3,9 @@
 security:
 
     encoders:
-        Symfony\Component\Security\Core\User\User: plaintext
+        Symfony\Component\Security\Core\User\User:
+            algorithm: bcrypt
+            cost: 20
 
     # https://symfony.com/doc/current/security.html#b-configuring-how-users-are-loaded
     providers:
@@ -11,7 +13,7 @@ security:
             memory:
                 users:
                     admin:
-                        password: pass
+                        password: HASHHERE~~~
                         roles: ROLE_BATMAN
 
     firewalls:
