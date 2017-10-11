@@ -6,7 +6,7 @@
     <h1>Welcome to the User:register page</h1>
 
     {% if message is defined %}
-    
+        <h3>{{ message }}</h3>
     {% else %}
         {{ form(form, {attr: {novalidate: 'novalidate'}}) }}
     {% endif %}

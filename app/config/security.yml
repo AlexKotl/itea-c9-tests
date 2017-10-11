@@ -2,10 +2,17 @@
 # https://symfony.com/doc/current/security.html
 security:
 
+    encoders:
+        Symfony\Component\Security\Core\User\User: plaintext
+
     # https://symfony.com/doc/current/security.html#b-configuring-how-users-are-loaded
     providers:
         in_memory:
-            memory: ~
+            memory:
+                users:
+                    admin:
+                        password: pass
+                        roles: ROLE_BATMAN
 
     firewalls:
         # disables authentication for assets and the profiler, adapt it according to your needs
@@ -24,6 +31,6 @@ security:
             #form_login: ~
             
     access_control:
-        - { path: /admin, roles: ROLE_ADMIN }
+        - { path: /admin, roles: ROLE_BATMAN }
 
     
