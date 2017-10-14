@@ -627,3 +627,32 @@
 [09-Oct-2017 18:38:46 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4446
 [09-Oct-2017 18:38:46 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4491}() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4491
 [09-Oct-2017 18:38:46 UTC] PHP   6. AppBundle\Controller\UserController->registerAction() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:4491
+[14-Oct-2017 19:14:04 UTC] PHP Fatal error:  Class 'Twig_Extensions_Extension_Text' not found in /home/ubuntu/workspace/symfony_first/var/cache/dev/appDevDebugProjectContainer.php on line 2545
+[14-Oct-2017 19:14:04 UTC] PHP Stack trace:
+[14-Oct-2017 19:14:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_first/web/app.php:0
+[14-Oct-2017 19:14:04 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/symfony_first/web/app.php:20
+[14-Oct-2017 19:14:04 UTC] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:171
+[14-Oct-2017 19:14:04 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:7023
+[14-Oct-2017 19:14:04 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:7068}() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:7068
+[14-Oct-2017 19:14:04 UTC] PHP   6. BlogBundle\Controller\DefaultController->indexAction() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:7068
+[14-Oct-2017 19:14:04 UTC] PHP   7. Symfony\Bundle\FrameworkBundle\Controller\Controller->render() /home/ubuntu/workspace/symfony_first/src/BlogBundle/Controller/DefaultController.php:16
+[14-Oct-2017 19:14:04 UTC] PHP   8. Symfony\Component\DependencyInjection\Container->get() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/ControllerTrait.php:234
+[14-Oct-2017 19:14:04 UTC] PHP   9. appDevDebugProjectContainer->getTemplatingService() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:5385
+[14-Oct-2017 19:14:04 UTC] PHP  10. Symfony\Component\DependencyInjection\Container->get() /home/ubuntu/workspace/symfony_first/var/cache/dev/appDevDebugProjectContainer.php:2452
+[14-Oct-2017 19:14:04 UTC] PHP  11. appDevDebugProjectContainer->getTwigService() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:5385
+[14-Oct-2017 19:24:56 UTC] PHP Fatal error:  Cannot access private property BlogBundle\Entity\Post::$user in /home/ubuntu/workspace/symfony_first/src/BlogBundle/Controller/DefaultController.php on line 13
+[14-Oct-2017 19:24:56 UTC] PHP Stack trace:
+[14-Oct-2017 19:24:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_first/web/app.php:0
+[14-Oct-2017 19:24:56 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/symfony_first/web/app.php:20
+[14-Oct-2017 19:24:56 UTC] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:171
+[14-Oct-2017 19:24:56 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:7023
+[14-Oct-2017 19:24:56 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:7068}() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:7068
+[14-Oct-2017 19:24:56 UTC] PHP   6. BlogBundle\Controller\DefaultController->indexAction() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:7068
+[14-Oct-2017 19:41:43 UTC] PHP Fatal error:  Call to undefined method BlogBundle\Entity\Post::getComments() in /home/ubuntu/workspace/symfony_first/src/BlogBundle/Controller/DefaultController.php on line 13
+[14-Oct-2017 19:41:43 UTC] PHP Stack trace:
+[14-Oct-2017 19:41:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_first/web/app.php:0
+[14-Oct-2017 19:41:43 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/symfony_first/web/app.php:20
+[14-Oct-2017 19:41:43 UTC] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:171
+[14-Oct-2017 19:41:43 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:7023
+[14-Oct-2017 19:41:43 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:7068}() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:7068
+[14-Oct-2017 19:41:43 UTC] PHP   6. BlogBundle\Controller\DefaultController->indexAction() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:7068

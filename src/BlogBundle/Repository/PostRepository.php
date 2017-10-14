@@ -10,4 +10,17 @@ namespace BlogBundle\Repository;
  */
 class PostRepository extends \Doctrine\ORM\EntityRepository
 {
+    
+    public function getAll() {
+        // still in dev 
+        $em = $this->getDoctrine()->getManager();
+        $query = $em->createQuery("
+            SELECT p, count(c.id)
+            FROM BlogBundle:Post 
+            JOIN p.comments c
+            GROUP BY p.id");
+            
+        return $query->getResult();
+    }
+    
 }
