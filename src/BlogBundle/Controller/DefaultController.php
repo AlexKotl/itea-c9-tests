@@ -16,4 +16,14 @@ class DefaultController extends Controller
             'posts' => $posts
         ]);
     }
+    
+    public function detailsAction($id) 
+    {
+        $post = $this->getDoctrine()->getRepository(Post::class)->find($id);
+        //$comments = 
+        
+        return $this->render('BlogBundle:Default:details.html.twig', [
+            'post' => $post
+        ]);
+    }
 }

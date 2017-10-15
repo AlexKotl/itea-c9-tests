@@ -10,7 +10,7 @@
             <div class="pull-right">
                 Post by <b>{{ post.getUser.firstName }} {{ post.getUser.lastName }}</b>
             </div>
-            <a href="">
+            <a href="{{ path('blog_post', {id: post.id}) }}">
                 <h3>
                     {{ post.title }} 
                     <small>
@@ -25,7 +25,7 @@
             
             <div>
                 <h5>
-                    <b></b> comments
+                    <b>-</b> comments
                 </h5>
             </div>    
             
