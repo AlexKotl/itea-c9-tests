@@ -5,6 +5,12 @@
         Add/Edit post
     </h2>
 
-    {{ form(form) }}
+    {% if message != "" %}
+        <h3>
+            {{ message }}
+        </h3>
+    {% else %}
+        {{ form(form) }}
+    {% endif %}
 
 {% endblock %}

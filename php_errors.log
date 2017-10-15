@@ -656,3 +656,17 @@
 [14-Oct-2017 19:41:43 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:7023
 [14-Oct-2017 19:41:43 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:7068}() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:7068
 [14-Oct-2017 19:41:43 UTC] PHP   6. BlogBundle\Controller\DefaultController->indexAction() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:7068
+[15-Oct-2017 20:21:36 UTC] PHP Parse error:  syntax error, unexpected ':', expecting ']' in /home/ubuntu/workspace/symfony_first/src/BlogBundle/Controller/DefaultController.php on line 56
+[15-Oct-2017 20:21:36 UTC] PHP Stack trace:
+[15-Oct-2017 20:21:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_first/web/app.php:0
+[15-Oct-2017 20:21:36 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/symfony_first/web/app.php:20
+[15-Oct-2017 20:21:36 UTC] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:171
+[15-Oct-2017 20:21:36 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:7023
+[15-Oct-2017 20:21:36 UTC] PHP   5. Symfony\Component\HttpKernel\Controller\TraceableControllerResolver->getController() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:7057
+[15-Oct-2017 20:21:36 UTC] PHP   6. Symfony\Component\HttpKernel\Controller\ControllerResolver->getController() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Controller/TraceableControllerResolver.php:58
+[15-Oct-2017 20:21:36 UTC] PHP   7. Symfony\Bundle\FrameworkBundle\Controller\ControllerResolver->createController() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:2682
+[15-Oct-2017 20:21:36 UTC] PHP   8. Symfony\Component\HttpKernel\Controller\ContainerControllerResolver->createController() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:2847
+[15-Oct-2017 20:21:36 UTC] PHP   9. Symfony\Component\HttpKernel\Controller\ControllerResolver->createController() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:2808
+[15-Oct-2017 20:21:36 UTC] PHP  10. class_exists() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:2738
+[15-Oct-2017 20:21:36 UTC] PHP  11. spl_autoload_call() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:2738
+[15-Oct-2017 20:21:36 UTC] PHP  12. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:2738
