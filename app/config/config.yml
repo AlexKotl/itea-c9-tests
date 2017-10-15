@@ -37,8 +37,11 @@ framework:
 
 # Twig Configuration
 twig:
+    form_themes:
+        - 'bootstrap_3_layout.html.twig'
     debug: '%kernel.debug%'
     strict_variables: '%kernel.debug%'
+    
 
 # Doctrine Configuration
 doctrine:
