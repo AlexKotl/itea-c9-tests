@@ -2,6 +2,11 @@ blog_homepage:
     path:     /
     defaults: { _controller: BlogBundle:Default:index }
 
+blog_post_add:
+    path:   /post/add
+    defaults: { _controller: BlogBundle:Default:add }
+    
 blog_post:
     path:   /post/{id}
     defaults: { _controller: BlogBundle:Default:details }
+    

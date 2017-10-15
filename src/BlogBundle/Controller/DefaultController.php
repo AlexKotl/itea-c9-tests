@@ -3,7 +3,9 @@
 namespace BlogBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Request;
 use BlogBundle\Entity\Post;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 
 class DefaultController extends Controller
 {
@@ -24,6 +26,22 @@ class DefaultController extends Controller
         
         return $this->render('BlogBundle:Default:details.html.twig', [
             'post' => $post
+        ]);
+    }
+    
+    public function addAction(Request $request) 
+    {
+        $post = new Post();
+        
+        $form = $this->createFormBuilder($post)
+            ->add('title')
+            ->add('content')
+            ->add('submit', SubmitType::class)
+            ->getForm();
+        
+        
+        return $this->render('BlogBundle:Default:add.html.twig', [
+            'form' => $form->createView()
         ]);
     }
 }

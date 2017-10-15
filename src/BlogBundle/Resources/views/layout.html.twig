@@ -16,7 +16,9 @@
 
         <div class="container">
             <div class="header col-md-12 bg-primary">
-                <img src="/images/logo.png" class="logo">
+                <a href="{{ path('blog_homepage') }}">
+                    <img src="/images/logo.png" class="logo">
+                </a>
             </div>
             
             <div class="main-menu col-md-2 hidden">
@@ -30,7 +32,7 @@
                 {% endblock %}
             </div>
         
-            <div class="col-md-10">
+            <div class="col-md-12">
                 {% block content %}
                     Welcome
                 {% endblock %}
