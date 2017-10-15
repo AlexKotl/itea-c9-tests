@@ -3,8 +3,10 @@ blog_homepage:
     defaults: { _controller: BlogBundle:Default:index }
 
 blog_post_add:
-    path:   /post/add
-    defaults: { _controller: BlogBundle:Default:add }
+    path:   /post/add/{id}
+    defaults: 
+        _controller: BlogBundle:Default:add
+        id: 0
     
 blog_post:
     path:   /post/{id}

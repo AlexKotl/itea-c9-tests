@@ -7,3 +7,10 @@ BlogBundle\Entity\User:
         email:
             - NotBlank: ~
             - Email: ~
+            
+BlogBundle\Entity\Post:
+    properties:
+        title:
+            - NotBlank: ~
+        content:
+            - NotBlank: ~

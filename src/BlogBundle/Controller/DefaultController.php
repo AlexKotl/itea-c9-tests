@@ -29,17 +29,28 @@ class DefaultController extends Controller
         ]);
     }
     
-    public function addAction(Request $request) 
+    public function addAction($id) 
     {
-        $post = new Post();
+        if ($id > 0) 
+        {
+            $post = $this->getDoctrine()->getRepository(Post::class)->find($id);
+        }
+        else 
+        {
+            $post = new Post();
+        }
         
         $form = $this->createFormBuilder($post)
             ->add('title')
             ->add('content')
             ->add('submit', SubmitType::class)
             ->getForm();
-        
-        
+            
+        if ($form->isSubmitted() && $form->isValid()) 
+        {
+            $this->redirectToRoute("blog_post_added");
+        }
+
         return $this->render('BlogBundle:Default:add.html.twig', [
             'form' => $form->createView()
         ]);

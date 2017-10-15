@@ -31,7 +31,11 @@
                 <h5>
                     <b>-</b> comments
                 </h5>
-            </div>    
+            </div>   
+            
+            <a href="{{ path('blog_post_add', {id: post.id}) }}" class="btn btn-default">
+                Edit
+            </a>
             
         </li>
     {% endfor %}
