@@ -13,9 +13,8 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
-        $posts = $this->getDoctrine()->getRepository(Post::class)->findAll();
-         //die($posts[0]->getComments());
-        
+        $posts = $this->getDoctrine()->getRepository(Post::class)->findBy([], ['id' => 'DESC']);
+
         return $this->render('BlogBundle:Default:index.html.twig', [
             'posts' => $posts
         ]);
@@ -24,8 +23,7 @@ class DefaultController extends Controller
     public function detailsAction($id) 
     {
         $post = $this->getDoctrine()->getRepository(Post::class)->find($id);
-        //$comments = 
-        
+
         return $this->render('BlogBundle:Default:details.html.twig', [
             'post' => $post
         ]);
