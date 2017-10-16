@@ -670,3 +670,63 @@
 [15-Oct-2017 20:21:36 UTC] PHP  10. class_exists() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:2738
 [15-Oct-2017 20:21:36 UTC] PHP  11. spl_autoload_call() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:2738
 [15-Oct-2017 20:21:36 UTC] PHP  12. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:2738
+[16-Oct-2017 21:06:35 UTC] PHP Fatal error:  Class 'BlogBundle\Controller\Comment' not found in /home/ubuntu/workspace/symfony_first/src/BlogBundle/Controller/DefaultController.php on line 26
+[16-Oct-2017 21:06:35 UTC] PHP Stack trace:
+[16-Oct-2017 21:06:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_first/web/app.php:0
+[16-Oct-2017 21:06:35 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/symfony_first/web/app.php:20
+[16-Oct-2017 21:06:35 UTC] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:171
+[16-Oct-2017 21:06:35 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:7023
+[16-Oct-2017 21:06:35 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:7068}() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:7068
+[16-Oct-2017 21:06:35 UTC] PHP   6. BlogBundle\Controller\DefaultController->detailsAction() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:7068
+[16-Oct-2017 21:07:51 UTC] PHP Fatal error:  Class 'BlogBundle\Controller\Comment' not found in /home/ubuntu/workspace/symfony_first/src/BlogBundle/Controller/DefaultController.php on line 26
+[16-Oct-2017 21:07:51 UTC] PHP Stack trace:
+[16-Oct-2017 21:07:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_first/web/app.php:0
+[16-Oct-2017 21:07:51 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/symfony_first/web/app.php:20
+[16-Oct-2017 21:07:51 UTC] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:171
+[16-Oct-2017 21:07:51 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:7023
+[16-Oct-2017 21:07:51 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:7068}() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:7068
+[16-Oct-2017 21:07:51 UTC] PHP   6. BlogBundle\Controller\DefaultController->detailsAction() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:7068
+[16-Oct-2017 21:08:05 UTC] PHP Fatal error:  Class 'BlogBundle\Controller\Comment' not found in /home/ubuntu/workspace/symfony_first/src/BlogBundle/Controller/DefaultController.php on line 26
+[16-Oct-2017 21:08:05 UTC] PHP Stack trace:
+[16-Oct-2017 21:08:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_first/web/app.php:0
+[16-Oct-2017 21:08:05 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/symfony_first/web/app.php:20
+[16-Oct-2017 21:08:05 UTC] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:171
+[16-Oct-2017 21:08:05 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:7023
+[16-Oct-2017 21:08:05 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:7068}() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:7068
+[16-Oct-2017 21:08:05 UTC] PHP   6. BlogBundle\Controller\DefaultController->detailsAction() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:7068
+[16-Oct-2017 21:08:11 UTC] PHP Fatal error:  Class 'BlogBundle\Controller\Comment' not found in /home/ubuntu/workspace/symfony_first/src/BlogBundle/Controller/DefaultController.php on line 26
+[16-Oct-2017 21:08:11 UTC] PHP Stack trace:
+[16-Oct-2017 21:08:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_first/web/app.php:0
+[16-Oct-2017 21:08:11 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/symfony_first/web/app.php:20
+[16-Oct-2017 21:08:11 UTC] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:171
+[16-Oct-2017 21:08:11 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:7023
+[16-Oct-2017 21:08:11 UTC] PHP   5. call_user_func_array:{/home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:7068}() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:7068
+[16-Oct-2017 21:08:11 UTC] PHP   6. BlogBundle\Controller\DefaultController->detailsAction() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:7068
+[16-Oct-2017 21:10:43 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/ubuntu/workspace/symfony_first/src/BlogBundle/Controller/DefaultController.php on line 40
+[16-Oct-2017 21:10:43 UTC] PHP Stack trace:
+[16-Oct-2017 21:10:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_first/web/app.php:0
+[16-Oct-2017 21:10:43 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/symfony_first/web/app.php:20
+[16-Oct-2017 21:10:43 UTC] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:171
+[16-Oct-2017 21:10:43 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:7023
+[16-Oct-2017 21:10:43 UTC] PHP   5. Symfony\Component\HttpKernel\Controller\TraceableControllerResolver->getController() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:7057
+[16-Oct-2017 21:10:43 UTC] PHP   6. Symfony\Component\HttpKernel\Controller\ControllerResolver->getController() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Controller/TraceableControllerResolver.php:58
+[16-Oct-2017 21:10:43 UTC] PHP   7. Symfony\Bundle\FrameworkBundle\Controller\ControllerResolver->createController() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:2682
+[16-Oct-2017 21:10:43 UTC] PHP   8. Symfony\Component\HttpKernel\Controller\ContainerControllerResolver->createController() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:2847
+[16-Oct-2017 21:10:43 UTC] PHP   9. Symfony\Component\HttpKernel\Controller\ControllerResolver->createController() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:2808
+[16-Oct-2017 21:10:43 UTC] PHP  10. class_exists() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:2738
+[16-Oct-2017 21:10:43 UTC] PHP  11. spl_autoload_call() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:2738
+[16-Oct-2017 21:10:43 UTC] PHP  12. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:2738
+[16-Oct-2017 21:10:44 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/ubuntu/workspace/symfony_first/src/BlogBundle/Controller/DefaultController.php on line 40
+[16-Oct-2017 21:10:44 UTC] PHP Stack trace:
+[16-Oct-2017 21:10:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/symfony_first/web/app.php:0
+[16-Oct-2017 21:10:44 UTC] PHP   2. Symfony\Component\HttpKernel\Kernel->handle() /home/ubuntu/workspace/symfony_first/web/app.php:20
+[16-Oct-2017 21:10:44 UTC] PHP   3. Symfony\Component\HttpKernel\HttpKernel->handle() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:171
+[16-Oct-2017 21:10:44 UTC] PHP   4. Symfony\Component\HttpKernel\HttpKernel->handleRaw() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:7023
+[16-Oct-2017 21:10:44 UTC] PHP   5. Symfony\Component\HttpKernel\Controller\TraceableControllerResolver->getController() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:7057
+[16-Oct-2017 21:10:44 UTC] PHP   6. Symfony\Component\HttpKernel\Controller\ControllerResolver->getController() /home/ubuntu/workspace/symfony_first/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Controller/TraceableControllerResolver.php:58
+[16-Oct-2017 21:10:44 UTC] PHP   7. Symfony\Bundle\FrameworkBundle\Controller\ControllerResolver->createController() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:2682
+[16-Oct-2017 21:10:44 UTC] PHP   8. Symfony\Component\HttpKernel\Controller\ContainerControllerResolver->createController() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:2847
+[16-Oct-2017 21:10:44 UTC] PHP   9. Symfony\Component\HttpKernel\Controller\ControllerResolver->createController() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:2808
+[16-Oct-2017 21:10:44 UTC] PHP  10. class_exists() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:2738
+[16-Oct-2017 21:10:44 UTC] PHP  11. spl_autoload_call() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:2738
+[16-Oct-2017 21:10:44 UTC] PHP  12. Symfony\Component\Debug\DebugClassLoader->loadClass() /home/ubuntu/workspace/symfony_first/var/cache/dev/classes.php:2738

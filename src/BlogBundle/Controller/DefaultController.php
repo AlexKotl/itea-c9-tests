@@ -6,6 +6,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use BlogBundle\Entity\Post;
 use BlogBundle\Entity\User;
+use BlogBundle\Entity\Comment;
 use BlogBundle\Entity\Category;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 
@@ -20,12 +21,32 @@ class DefaultController extends Controller
         ]);
     }
     
-    public function detailsAction($id) 
+    public function detailsAction($id, Request $request) 
     {
         $post = $this->getDoctrine()->getRepository(Post::class)->find($id);
+        $comment = new Comment();
+        
+        $commentForm = $this->createFormBuilder($comment)
+            ->add('text')
+            ->add('submit', SubmitType::class)
+            ->getForm()
+            ->handleRequest($request);
+            
+        if ($commentForm->isSubmitted() && $commentForm->isValid()) 
+        {
+            $comment
+                ->setDate(new \DateTime("now"))
+                ->setUser($post->getUser())
+                ->setPost($post);
+                
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($comment);
+            $em->flush();
+        }
 
         return $this->render('BlogBundle:Default:details.html.twig', [
-            'post' => $post
+            'post' => $post,
+            'commentForm' => $commentForm->createView(),
         ]);
     }
     
