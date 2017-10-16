@@ -8,37 +8,43 @@
     
     <h2>Posts list</h2>
     
-    <ul class="postsList">
     {% for post in posts %}
-        <li>
-            <div class="pull-right">
-                Post by <b>{{ post.getUser.firstName }} {{ post.getUser.lastName }}</b>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="pull-right">
+                    Post by <b>{{ post.getUser.firstName }} {{ post.getUser.lastName }}</b>
+                </div>
+                <a href="{{ path('blog_post', {id: post.id}) }}">
+                    <h3>
+                        {{ post.title }} 
+                    </h3>
+                </a>
+                <small>
+                    {{ post.date | date('Y-m-d') }}
+                </small>
             </div>
-            <a href="{{ path('blog_post', {id: post.id}) }}">
-                <h3>
-                    {{ post.title }} 
-                    <small>
-                        {{ post.date | date('Y-m-d') }}
-                    </small>
-                </h3>
-            </a>
+            <div class="panel-body">
+                
 
-            <p>
-                {{ post.content | slice(0, 200) }}...
-            </p>
-            
-            <div>
-                <h5>
-                    <b>{{ post.comments | length }}</b> comments
-                </h5>
-            </div>   
-            
-            <a href="{{ path('blog_post_add', {id: post.id}) }}" class="btn btn-default">
-                Edit
-            </a>
-            
-        </li>
+                <p>
+                    {{ post.content | slice(0, 200) }}...
+                </p>
+                
+                <div>
+                    <h5>
+                        <b>{{ post.comments | length }}</b> comments
+                    </h5>
+                </div>   
+                
+                <a href="{{ path('blog_post', {id: post.id}) }}" class="btn btn-primary">
+                    View
+                </a>
+                
+                <a href="{{ path('blog_post_add', {id: post.id}) }}" class="btn btn-default">
+                    Edit
+                </a>
+            </div>
+        </div>
     {% endfor %}
-    </ul>
 
 {% endblock %}
