@@ -23,6 +23,11 @@ BlogBundle\Entity\Post:
             targetEntity: Category
         user:
             targetEntity: User
+            
+    oneToMany:
+        comments:
+            targetEntity: Comment
+            mappedBy: post
 
     manyToMany:
         tags:

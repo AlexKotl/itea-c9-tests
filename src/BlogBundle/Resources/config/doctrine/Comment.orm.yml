@@ -18,6 +18,7 @@ BlogBundle\Entity\Comment:
     manyToOne:
         post:
             targetEntity: Post
+            inversedBy: comments
         comment:
             targetEntity: Comment
         user:
