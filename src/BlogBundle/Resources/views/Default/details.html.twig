@@ -8,5 +8,19 @@
     
     <h3>Comments</h3>
     
+    {% for comment in post.comments %}
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <small class="pull-right">
+                    {{ post.date | date('Y-m-d') }}
+                </small>
+                {{ comment.user.firstName }} {{ comment.user.lastName }}
+            </div>
+            <div class="panel-body">
+                {{ comment.text }}
+            </div>
+        </div>
+    {% endfor %}
+    
 
 {% endblock %}
