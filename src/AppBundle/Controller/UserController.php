@@ -6,6 +6,7 @@ use BlogBundle\Entity\User;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
+use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
 
 class UserController extends Controller
 {
@@ -35,14 +36,22 @@ class UserController extends Controller
         ));
     }
     
-    public function loginAction() 
+    public function loginAction(AuthenticationUtils $auth) 
     {
+        $error = $auth->getLastAuthenticationError();
+        $login = $auth->getLastUsername();
         
+        return $this->render('AppBundle:User:login.html.twig', array(
+            'error' => $error,
+            'login' => $login,
+        ));
     }
     
     public function profileAction() 
     {
-        
+        return $this->render('AppBundle:User:register.html.twig', array(
+            'message' => "Admin area."
+        ));
     }
     
     public function adminAction() 

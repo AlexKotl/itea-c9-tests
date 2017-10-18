@@ -35,6 +35,6 @@ security:
                 check_path: login
             
     access_control:
-        - { path: /admin, roles: ROLE_BATMAN }
+        - { path: ^/admin, roles: ROLE_ADMIN }
 
     
