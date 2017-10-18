@@ -2,10 +2,10 @@
 # https://symfony.com/doc/current/security.html
 security:
 
-    encoders:
+    encoders: 
         Symfony\Component\Security\Core\User\User:
-            algorithm: bcrypt
-            cost: 20
+            algorithm: plaintext
+            #cost: 20
 
     # https://symfony.com/doc/current/security.html#b-configuring-how-users-are-loaded
     providers:
@@ -13,8 +13,8 @@ security:
             memory:
                 users:
                     admin:
-                        password: HASHHERE~~~
-                        roles: ROLE_BATMAN
+                        password: pass
+                        roles: ROLE_ADMIN
 
     firewalls:
         # disables authentication for assets and the profiler, adapt it according to your needs
