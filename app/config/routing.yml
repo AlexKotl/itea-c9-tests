@@ -71,3 +71,11 @@ register_success:
 admin:
     path:     /admin
     defaults: { _controller: AppBundle:User:admin }
+    
+profile:
+    path:     /profile
+    defaults: { _controller: AppBundle:User:profile } 
+    
+login:
+    path:     /login
+    defaults: { _controller: AppBundle:User:login } 

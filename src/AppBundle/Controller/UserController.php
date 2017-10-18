@@ -35,6 +35,16 @@ class UserController extends Controller
         ));
     }
     
+    public function loginAction() 
+    {
+        
+    }
+    
+    public function profileAction() 
+    {
+        
+    }
+    
     public function adminAction() 
     {
         return $this->render('AppBundle:User:register.html.twig', array(
@@ -48,5 +58,6 @@ class UserController extends Controller
             'message' => "User registered"
         ));
     }
+    
 
 }
